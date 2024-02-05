@@ -6,11 +6,24 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: rgba(32, 33, 36, 1);
+    animation: landing-animation 1s ease-in-out;
    
+}
+@keyframes landing-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
 }
 
 .navigation{
     display: flex;
+    animation: landing-animation 2s ease-in-out;
 
 }
 
@@ -102,6 +115,10 @@ body{
 }
 
 .line2{
+    width:40vw;
+    height: fit-content;
+}
+.line2_1{
     width:20vw;
     height: fit-content;
 }
@@ -154,6 +171,10 @@ body{
 
 
 }
+.intro{
+    animation: landing-animation 3s ease-in-out;
+}
+
 
 .img1{
     border: 1px solid rgba(32, 33, 36, 1);
@@ -168,10 +189,11 @@ body{
     align-items: center;
     margin-top:200px;
     
-
+    
     width:95vw;
     height: fit-content;
 }
+
 
 .img2{
     border: 1px solid rgba(32, 33, 36, 1);
@@ -229,7 +251,7 @@ body{
     width: 240px;
     height: 0px;
     border-radius: 3px;
-    margin-left:49px
+    margin-left:10vw
 }
 
 
@@ -389,7 +411,7 @@ body{
     outline: none;
     border: none;
      height:92%;
-      width: 40vw;
+      width: 20vw;
      background-color: rgba(32, 33, 36, 1);
      font-family: Poppins;
     font-size: 32px;
@@ -514,10 +536,11 @@ body{
     justify-content: space-between;
     align-items: center;
     height: fit-content;
-    width: 90vw;
+    width: 85vw;
     margin-top:150px;
     margin-bottom: 60px;
 }
+
 
 .new_client{
     display: flex;
@@ -525,7 +548,7 @@ body{
     justify-content: space-around;
     align-items: space-around;
     height: 70vh;
-    width: 25vw;
+    width: 55vw;
 
 }
 
@@ -563,6 +586,33 @@ body{
     
     
 
+}
+@media  screen and (max-width: 850px) {
+    .info_container{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .vertical_line2{
+        display: none;
+    }
+    .client_name{
+        width: 50vw;
+    }
+    .client_email{
+        width: 50vw;
+    }
+    .client_message{
+        width: 50vw;
+    }
+    .horizontal_line{
+        display: none;
+    }
+    .text2{
+        font-size: 25px;
+        width: 20vw;
+    }
+    
 }
 
 
