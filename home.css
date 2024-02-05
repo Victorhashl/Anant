@@ -208,7 +208,7 @@ body{
     margin-left: 15px;
 }
 
-.services{
+#services{
     margin-top:200px;
     display: flex;
     flex-direction: column;
@@ -493,7 +493,7 @@ body{
     color: rgba(255, 165, 136, 1);
 }
 
-.contact_me{
+#contact_me{
     
     display: flex;
     flex-direction: column;
